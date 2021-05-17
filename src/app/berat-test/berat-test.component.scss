@@ -1,0 +1,26 @@
+.testBase {
+  display: flex;
+  flex-direction: column;
+  .textSide {
+    width: 300px;
+    align-self: center;
+    display: flex;
+    justify-content: flex-start;
+    .formField {
+      // justify-self: flex-start;
+    }
+    .colorBase {
+      margin-left: auto;
+      justify-self: center;
+      .color {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+  }
+  .cssTest {
+    align-self: center;
+  }
+}

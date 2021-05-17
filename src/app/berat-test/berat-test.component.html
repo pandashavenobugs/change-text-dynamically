@@ -1,0 +1,55 @@
+<div class="testBase">
+  <div class="textSide">
+    <div class="formField">
+      <mat-form-field>
+        <mat-label>text </mat-label>
+        <input matInput [(ngModel)]="text" />
+      </mat-form-field>
+    </div>
+
+    <div class="colorBase">
+      <input
+        class="color"
+        [(colorPicker)]="color"
+        [cpPosition]="'bottom'"
+        [style.background]="color"
+      />
+    </div>
+  </div>
+  <div class="textSide">
+    <div class="formField">
+      <mat-form-field>
+        <mat-label>font boyutu </mat-label>
+        <input matInput [(ngModel)]="fontSize" />
+      </mat-form-field>
+    </div>
+
+    <div class="colorBase">
+      <input
+        class="color"
+        [(colorPicker)]="backgroundColor"
+        [cpPosition]="'bottom'"
+        [style.background]="backgroundColor"
+      />
+    </div>
+  </div>
+  <div class="textSide">
+    <div class="formField">
+      <mat-form-field>
+        <mat-label>genislik </mat-label>
+        <input matInput [(ngModel)]="width" />
+      </mat-form-field>
+    </div>
+
+    <div class="formField">
+      <mat-form-field>
+        <mat-label>yukseklik </mat-label>
+        <input matInput [(ngModel)]="height" />
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="cssTest">
+    <button mat-button (click)="changeTheCss()">Test et</button>
+    <p [ngStyle]="this.system">{{ this.text }}</p>
+  </div>
+</div>
